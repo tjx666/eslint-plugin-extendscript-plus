@@ -11,14 +11,11 @@
     "aftereffects"
   ],
   "author": "YuTengjing",
-  "main": "./lib/index.js",
-  "exports": "./lib/index.js",
+  "main": "./index.js",
+  "exports": "./index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive"
-  },
-  "dependencies": {
-    "requireindex": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
@@ -32,5 +29,8 @@
   "peerDependencies": {
     "eslint": ">=7"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/eslint-parser": "7.18.9"
+  }
 }

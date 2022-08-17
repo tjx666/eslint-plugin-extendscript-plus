@@ -22,25 +22,20 @@ Add `extendscript-plus` to the plugins section of your `.eslintrc` configuration
 
 ```json
 {
-    "plugins": [
-        "extendscript-plus"
-    ]
+  "plugins": ["extendscript-plus"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "extendscript-plus/rule-name": 2
-    }
+  "rules": {
+    "extendscript-plus/rule-name": 2
+  }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
+- Fill in provided rules here
