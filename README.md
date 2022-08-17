@@ -39,3 +39,10 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 - Fill in provided rules here
+
+## Thanks
+
+I learn a lot from these awesome projects:
+
+- [eslint-plugin-extendscript](https://github.com/adambrgmn/eslint-plugin-extendscript)
+- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
