@@ -22,9 +22,9 @@ npm install eslint-plugin-extendscript-plus --save-dev
 
 Add `extendscript-plus` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
-```json
+```javascript
 {
-  "extends": [...others， "plugin:eslint-plugin/photoshop"]
+  "extends": [...others， "plugin:eslint-plugin-extendscript-plus/photoshop"]
 }
 ```
 
