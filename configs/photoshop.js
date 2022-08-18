@@ -2,7 +2,7 @@
 
 const extendscriptConfig = require('./extendscript');
 
-/** @type {import('./extendscript').ESlintConfig} */
+/** @type {import('../.eslintrc').ESlintConfig} */
 module.exports = {
   extends: extendscriptConfig,
   globals: {

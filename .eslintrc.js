@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * @typedef {import('eslint').Linter.Config} ESlintConfig
+ */
+
+/** @type {ESlintConfig} */
 module.exports = {
   root: true,
   extends: [
@@ -17,4 +22,7 @@ module.exports = {
       env: { mocha: true },
     },
   ],
+  rules: {
+    'no-unused-vars': [1, { argsIgnorePattern: 'context' }],
+  },
 };

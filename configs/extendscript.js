@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * @typedef {ESlintConfig['globals']} ESLintGlobals
+ */
+
 /** @type {ESLintGlobals} */
 const baseGlobals = {
   $: 'readonly',
@@ -110,9 +114,7 @@ const externalObjectsGLobals = {
 };
 
 /**
- * @typedef {import('eslint').Linter.Config} ESlintConfig
- * @typedef {ESlintConfig['globals']} ESLintGlobals
- * @type {ESlintConfig}
+ * @type {import('../.eslintrc').ESlintConfig}
  */
 module.exports = {
   env: {},
