@@ -2,6 +2,13 @@
   "name": "eslint-plugin-extendscript-plus",
   "version": "0.0.0",
   "description": "polyfill global variables & provide some awesome rules",
+  "author": "YuTengjing",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -10,27 +17,21 @@
     "photoshop",
     "aftereffects"
   ],
-  "author": "YuTengjing",
-  "main": "./index.js",
-  "exports": "./index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
-  "devDependencies": {
-    "eslint": "^8.22.0",
-    "eslint-plugin-eslint-plugin": "^5.0.5",
-    "eslint-plugin-node": "^11.1.0",
-    "mocha": "^10.0.0"
-  },
-  "engines": {
-    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  "dependencies": {
+    "@babel/eslint-parser": "7.18.9"
   },
   "peerDependencies": {
     "eslint": ">=7"
   },
-  "license": "ISC",
-  "dependencies": {
-    "@babel/eslint-parser": "7.18.9"
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-eslint-plugin": "^5.0.5",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^10.0.0"
   }
 }
