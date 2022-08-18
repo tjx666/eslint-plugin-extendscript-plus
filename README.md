@@ -1,3 +1,5 @@
+![test](https://github.com/tjx666/eslint-plugin-extendscript-plus/actions/workflows/test.yml/badge.svg)
+
 # eslint-plugin-extendscript-plus
 
 polyfill global variables &amp; provide some awesome rules
@@ -22,7 +24,7 @@ Add `extendscript-plus` to the plugins section of your `.eslintrc` configuration
 
 ```json
 {
-  "plugins": ["extendscript-plus"]
+  "extends": [...others， "plugin:eslint-plugin/photoshop"]
 }
 ```
 
@@ -31,7 +33,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "extendscript-plus/rule-name": 2
+    "eslint-plugin-extendscript-plus/no-let-const": 0
   }
 }
 ```
