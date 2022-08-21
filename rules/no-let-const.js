@@ -2,7 +2,7 @@
 
 const MESSAGE_ID_DEFAULT = 'default';
 const messages = {
-  [MESSAGE_ID_DEFAULT]: 'es3 environment not allow let/const to declare variable',
+  [MESSAGE_ID_DEFAULT]: 'es3 environment not support let/const to declare variable',
 };
 
 const NotAllowedKind = new Set(['let', 'const']);
