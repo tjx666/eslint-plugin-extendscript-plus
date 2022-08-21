@@ -12,11 +12,9 @@ const packageJson = require('../package.json');
  */
 
 const repoUrl = 'https://github.com/tjx666/eslint-plugin-extendscript-plus';
-function getDocumentationUrl() {
-  return (filename) => {
-    const ruleName = path.basename(filename, '.js');
-    return `${repoUrl}/blob/v${packageJson.version}/docs/rules/${ruleName}.md`;
-  };
+function getDocumentationUrl(filename) {
+  const ruleName = path.basename(filename, '.js');
+  return `${repoUrl}/blob/v${packageJson.version}/docs/rules/${ruleName}.md`;
 }
 
 /** @returns {import('eslint').Rule.RuleModule} */
