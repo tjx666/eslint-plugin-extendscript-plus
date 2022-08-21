@@ -3,13 +3,13 @@
 const extendscriptConfig = require('./configs/extendscript');
 const photoshopConfig = require('./configs/photoshop');
 
-const { loadRules } = require('./rules');
+const rules = require('./rules/index');
 
 /**
  * @type {import('eslint').ESLint.Plugin}
  */
 module.exports = {
-  rules: loadRules(),
+  rules,
   configs: {
     extendscript: extendscriptConfig,
     photoshop: photoshopConfig,

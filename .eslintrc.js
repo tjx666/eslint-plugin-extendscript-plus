@@ -25,4 +25,5 @@ module.exports = {
   rules: {
     'no-unused-vars': [1, { argsIgnorePattern: 'context' }],
   },
+  ignorePatterns: ['**/templets/*.js'],
 };

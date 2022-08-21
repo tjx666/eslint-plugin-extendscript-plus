@@ -48,3 +48,4 @@ I learn a lot from these awesome projects:
 
 - [eslint-plugin-extendscript](https://github.com/adambrgmn/eslint-plugin-extendscript)
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- [eslint-plugin-es](https://github.com/tjx666/eslint-plugin-es)
