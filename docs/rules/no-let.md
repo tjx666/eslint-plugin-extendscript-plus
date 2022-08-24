@@ -1,4 +1,4 @@
-# ExtendScript ECMAScript3 doesn't support let/const
+# ExtendScript doesn't support let
 
 ✅ This rule is part of the recommended config.
 
@@ -17,15 +17,6 @@ let a, b;
 ```javascript
 let a,
   b = 1;
-```
-
-```javascript
-const a = 1;
-```
-
-```javascript
-const b = 1,
-  c = 2;
 ```
 
 ## Pass

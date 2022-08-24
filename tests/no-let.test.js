@@ -1,6 +1,6 @@
 'use strict';
 
-const rule = require('../rules/no-let-const');
+const rule = require('../rules/no-let');
 const { ruleTester } = require('./utils');
 
 ruleTester.run('no-let-const', rule, {
@@ -26,16 +26,6 @@ ruleTester.run('no-let-const', rule, {
       code: 'let a, b = 1;',
       errors: [{ message: rule.meta.messages.default }],
       output: 'var a, b = 1;',
-    },
-    {
-      code: 'const a = 1',
-      errors: [{ message: rule.meta.messages.default }],
-      output: 'var a = 1',
-    },
-    {
-      code: 'const a = 1, b = 2;',
-      errors: [{ message: rule.meta.messages.default }],
-      output: 'var a = 1, b = 2;',
-    },
+    }
   ],
 });
