@@ -3,6 +3,7 @@
 const { RuleTester } = require('eslint');
 
 const extendscriptConfig = require('../configs/extendscript');
+delete extendscriptConfig.rules;
 
 /** @type {import('../.eslintrc').ESlintConfig} */
 const config = {
