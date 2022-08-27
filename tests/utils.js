@@ -1,4 +1,5 @@
-const path = require('node:path');
+'use strict';
+
 const { RuleTester } = require('eslint');
 
 const extendscriptConfig = require('../configs/extendscript');
@@ -6,7 +7,7 @@ const extendscriptConfig = require('../configs/extendscript');
 /** @type {import('../.eslintrc').ESlintConfig} */
 const config = {
   ...extendscriptConfig,
-  parser: path.resolve(__dirname, '../node_modules/@babel/eslint-parser'),
+  parser: require.resolve('@babel/eslint-parser'),
   parserOptions: {
     ...extendscriptConfig.parserOptions,
     requireConfigFile: false,

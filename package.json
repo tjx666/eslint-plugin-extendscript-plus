@@ -6,6 +6,11 @@
   "license": "MIT",
   "main": "./index.js",
   "exports": "./index.js",
+  "files": [
+    "index.js",
+    "rules",
+    "configs"
+  ],
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },

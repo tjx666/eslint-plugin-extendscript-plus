@@ -4,6 +4,10 @@
  * @typedef {ESlintConfig['globals']} ESLintGlobals
  */
 
+// const OFF = 0;
+// const WARN = 1;
+const ERROR = 2;
+
 /** @type {ESLintGlobals} */
 const baseGlobals = {
   $: 'readonly',
@@ -114,7 +118,7 @@ const externalObjectsGLobals = {
 };
 
 /**
- * @type {import('../.eslintrc').ESlintConfig}
+ * @type {}
  */
 module.exports = {
   env: {},
@@ -127,5 +131,14 @@ module.exports = {
     ...baseGlobals,
     ...scriptUIGlobals,
     ...externalObjectsGLobals,
+  },
+  plugins: ['eslint-plugin-extendscript-plus'],
+  rules: {
+    'no-undef': ERROR,
+
+    'extendscript-plus/no-let': ERROR,
+    'extendscript-plus/no-console': ERROR,
+    'extendscript-plus/no-arrow-func': ERROR,
+    'extendscript-plus/no-property-shorthand': ERROR,
   },
 };

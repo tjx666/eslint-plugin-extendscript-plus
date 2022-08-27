@@ -49,10 +49,12 @@ const create = (context) => {
 
           // wrap first argument with ()
           const firstArg = node.params[0];
-          const openParenToken = sourceCode.getTokenBefore(firstArg, isOpeningParenToken);
-          if (!openParenToken || !rangeInside(openParenToken.range, node.range)) {
-            yield fixer.insertTextBefore(firstArg, '(');
-            yield fixer.insertTextAfter(firstArg, ')');
+          if (firstArg) {
+            const openParenToken = sourceCode.getTokenBefore(firstArg, isOpeningParenToken);
+            if (!openParenToken || !rangeInside(openParenToken.range, node.range)) {
+              yield fixer.insertTextBefore(firstArg, '(');
+              yield fixer.insertTextAfter(firstArg, ')');
+            }
           }
         },
       });

@@ -6,5 +6,5 @@
  * @typedef {RuleModule['create']} RuleCreate
  */
 
-const rules = require('./utils/loadRules');
-module.exports = rules;
+const { loadRules } = require('./utils/loadRules');
+module.exports = loadRules();

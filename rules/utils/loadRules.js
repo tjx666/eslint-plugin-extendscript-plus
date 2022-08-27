@@ -28,7 +28,7 @@ function loadRule(ruleId) {
       schema: [],
       ...rule.meta,
       docs: {
-        ...rule.meta.docs,
+        ...(rule.meta.docs || {}),
         url: getDocumentationUrl(ruleId),
       },
     },
@@ -40,7 +40,7 @@ function loadRules() {
   return Object.fromEntries(
     fs
       .readdirSync(path.resolve(__dirname, '../'), { withFileTypes: true })
-      .filter((file) => file.isFile())
+      .filter((file) => file.name !== 'index.js' &&  file.isFile())
       .map((file) => {
         const ruleId = path.basename(file.name, '.js');
         return [ruleId, loadRule(ruleId)];
@@ -48,4 +48,4 @@ function loadRules() {
   );
 }
 
-module.exports = { loadRules }
+module.exports = { loadRules };

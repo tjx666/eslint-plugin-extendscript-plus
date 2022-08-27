@@ -1,10 +1,8 @@
 'use strict';
 
-const extendscriptConfig = require('./extendscript');
-
 /** @type {import('../.eslintrc').ESlintConfig} */
 module.exports = {
-  extends: extendscriptConfig,
+  extends: require.resolve('./extendscript.js'),
   globals: {
     ActionDescriptor: 'readonly',
     ActionList: 'readonly',
@@ -185,6 +183,7 @@ module.exports = {
     PhotoCDColorSpace: 'readonly',
     PhotoCDOpenOptions: 'readonly',
     PhotoCDSize: 'readonly',
+    photoshop: 'readonly',
     PhotoshopSaveOptions: 'readonly',
     PICTBitsPerPixels: 'readonly',
     PICTCompression: 'readonly',
@@ -265,5 +264,5 @@ module.exports = {
     WhiteBalanceType: 'readonly',
     XMPMetadata: 'readonly',
     ZigZagType: 'readonly',
-  },
+  }
 };

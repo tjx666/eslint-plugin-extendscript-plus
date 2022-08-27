@@ -13,7 +13,7 @@ const create = (context) => {
     VariableDeclaration(node) {
       if (NotAllowedKind.has(node.kind)) {
         context.report({
-          node,
+          node: sourceCode.getFirstToken(node),
           messageId: MESSAGE_ID_DEFAULT,
           fix(fixer) {
             const declareKindToken = sourceCode.getFirstToken(node, {

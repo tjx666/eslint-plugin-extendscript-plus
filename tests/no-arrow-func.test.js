@@ -43,7 +43,11 @@ ruleTester.run('no-arrow-func', rule, {
       options: [],
       output: 'var callback = function(e) { return {} }',
     },
+    {
+      code: 'const a = () => {};',
+      errors: [{ message: rule.meta.messages.default }],
+      options: [],
+      output: 'const a = function() {};'
+    },
   ],
 });
-
-const a = () => {};
