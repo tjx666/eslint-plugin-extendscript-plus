@@ -1,6 +1,6 @@
-![test](https://github.com/tjx666/eslint-plugin-extendscript-plus/actions/workflows/test.yml/badge.svg)
-
 # eslint-plugin-extendscript-plus
+
+[![npm](https://img.shields.io/npm/v/eslint-plugin-extendscript-plus)](https://www.npmjs.com/package/eslint-plugin-extendscript-plus) [![npm](https://img.shields.io/npm/dm/eslint-plugin-extendscript-plus)](https://www.npmjs.com/package/eslint-plugin-extendscript-plus) ![test](https://github.com/tjx666/eslint-plugin-extendscript-plus/actions/workflows/test.yml/badge.svg)
 
 polyfill global variables &amp; provide some awesome rules
 
