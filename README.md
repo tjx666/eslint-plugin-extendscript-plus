@@ -36,11 +36,20 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
+## TODOs
+
+- [ ] AE support
+
+### rules
+
+- [ ] prefer-const-to-var
+- [ ] no-redeclare-const
+
 ## Supported Rules
 
 Each rule has emojis denoting:
 
-- ✅ if it belongs to the `recommended` configuration
+- ✅ if it is enable by default
 - 🔧 if some problems reported by the rule are automatically fixable by the `--fix` [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) option
 - 💡 if some problems reported by the rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions)
 
