@@ -4,8 +4,8 @@
  * @typedef {ESlintConfig['globals']} ESLintGlobals
  */
 
-// const OFF = 0;
-// const WARN = 1;
+const OFF = 0;
+const WARN = 1;
 const ERROR = 2;
 
 /** @type {ESLintGlobals} */
@@ -135,6 +135,26 @@ module.exports = {
   plugins: ['eslint-plugin-extendscript-plus'],
   rules: {
     'no-undef': ERROR,
+    'no-empty': OFF,
+    'no-unused-vars': [WARN, { argsIgnorePattern: '^_' }],
+
+    eqeqeq: [ERROR, 'smart'],
+    radix: ERROR,
+
+    'block-scoped-var': ERROR,
+    'consistent-this': ERROR,
+    'default-case-last': ERROR,
+    'default-case': ERROR,
+    'dot-notation': ERROR,
+    'func-name-matching': ERROR,
+    'guard-for-in': ERROR,
+    'max-lines': [ERROR, { max: 2048 }],
+    'max-nested-callbacks': ERROR,
+    'max-params': [ERROR, { max: 4 }],
+    'new-cap': ERROR,
+    'no-invalid-this': ERROR,
+    'no-unused-expressions': ERROR,
+    'no-use-before-define': [ERROR, { functions: false }],
 
     'extendscript-plus/no-let': ERROR,
     'extendscript-plus/no-console': ERROR,
