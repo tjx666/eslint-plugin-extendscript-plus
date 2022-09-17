@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-extendscript-plus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "polyfill global variables & provide some awesome rules",
   "author": "YuTengjing",
   "license": "MIT",
