@@ -29,6 +29,7 @@ const baseGlobals = {
   Error: 'readonly',
   escape: 'readonly',
   eval: 'readonly',
+  ExternalObject: 'readonly',
   File: 'readonly',
   Folder: 'readonly',
   Function: 'readonly',
@@ -65,6 +66,7 @@ const baseGlobals = {
   subMenuGraphic: 'readonly',
   subMenuSwatch: 'readonly',
   subMenuSymbol: 'readonly',
+  system: 'readonly',
   tempPSVersionInfo: 'readonly',
   undefined: 'readonly',
   unescape: 'readonly',
@@ -72,6 +74,7 @@ const baseGlobals = {
   UnitValue: 'readonly',
   XML: 'readonly',
   XMLList: 'readonly',
+  XMPMeta: 'readonly',
 };
 
 /** @type {ESLintGlobals} */
